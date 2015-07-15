@@ -1,0 +1,16 @@
+<!DOCTYPE css>
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+nav a, button {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+img.photo-of-me {
+  margin: 0 auto 10px;
+  display: block;
+  border-radius: 50%;
+}

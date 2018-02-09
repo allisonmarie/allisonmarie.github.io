@@ -6,9 +6,11 @@ body
   color: #ffffff;
   padding-left: 11em;
   padding-right: 11em;
-  a:link {
-    color: #ffffff }
-  a:visited {
-    color: #ffffff }
+  
 }
-
+a:link {
+  color: #ffffff 
+}
+a:visited {
+  color: #ffffff 
+}

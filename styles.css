@@ -13,7 +13,7 @@ a:link {
 
 /* Styles for a link on hover */
 a:hover {
-  color: rgb(255,82,82);
+  color: rgb(255, 82, 82);
   text-decoration: underline;
 }
 

@@ -1,9 +1,9 @@
 body
 {
   background-color: #000000;
-  font-family: "Open Sans", Arial, sans-serif;
   font-size: 24px;
   color: #ffffff;
+  font-family: 'Merriweather', serif;
 }
 a:link {
   color: #ffffff 

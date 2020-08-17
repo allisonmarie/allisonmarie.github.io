@@ -15,6 +15,13 @@ body {
   font-size: 30px;
 }
 
+.subheader {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
 /* Styles for a link before hover or visiting */
 a:link {
   color: #ffffff;
@@ -35,7 +42,6 @@ a:visited {
 
 footer {
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 2px;
   font-size: 14px;
 }
   

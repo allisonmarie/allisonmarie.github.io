@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Header stuff -->
+<head>
+  <title> Allison's Links </title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Allison's Links">
+</head>
+
+<!-- Main Content -->
+  
+  <div class="header">
+  <h1>"Link in Bio"</h1>
+  <p> I'll keep updating this list of links to serve as a one-stop shop of things that are important to me. </p>
+</div>
+  
+  <body>        
+<div class="subheader">
+    <p> THE LINKS </p>
+    </div>
+    
+    <p> This link is updated weekly with actions to take for #blacklivesmatter: </p>
+
+<form>
+    <input type="button" onclick="window.location.href='http://bit.ly/SBA4MBL';" value="Sunrise Bay Area Solidarity" />
+    </form>  
+  </body>
+  <footer>
+  <b> You can also find me elsewhere on the internet: <a href="https://twitter.com/allis0nc00per"> <u>Twitter</u> </a> | <a href="http://www.linkedin.com/in/allisonmariecooper"> <u>Linkedin</> </a> </b>
+</footer>
+  
+</html>  

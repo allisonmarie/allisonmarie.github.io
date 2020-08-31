@@ -1,6 +1,6 @@
 body {
   background-color: #000000;
-  font-size: 24px;
+  font-size: 16px;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   margin-top: 100px;
@@ -19,7 +19,7 @@ body {
   color: white;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 img {
@@ -51,7 +51,7 @@ a:visited {
 
 footer {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .form {
@@ -65,7 +65,7 @@ footer {
   text-align: center;
   display: inline-block;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 8px;
 }
 

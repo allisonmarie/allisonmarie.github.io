@@ -22,6 +22,10 @@ body {
   font-size: 14px;
 }
 
+img {
+  float: left;
+}
+
 /* Styles for a link before hover or visiting */
 a:link {
   color: #ffffff;

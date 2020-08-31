@@ -28,7 +28,7 @@ img {
 }
 
 .imageblock { 
-  align-items:center; 
+  vertical-align: middle;
 }
 
 /* Styles for a link before hover or visiting */

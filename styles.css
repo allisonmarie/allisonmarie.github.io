@@ -27,6 +27,10 @@ img {
   padding-right: 10px;
 }
 
+.imageblock { 
+  align-items:center; 
+}
+
 /* Styles for a link before hover or visiting */
 a:link {
   color: #ffffff;

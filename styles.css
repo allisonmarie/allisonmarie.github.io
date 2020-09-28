@@ -70,9 +70,9 @@ footer {
 }
 
 input[type=button], input[type=submit], input[type=reset] {
-  background-color: #ffffff;
+  background-color: #606060;
   border: none;
-  color: black;
+  color: #ffffff;
   padding: 16px 32px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
@@ -82,24 +82,26 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .collapsible {
   background-color: #383838;
-  color: #444;
+  color: #ffffff;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: #787878;
 }
 
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  color: #444;
+  color: #ffffff;
   background-color: #383838;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }

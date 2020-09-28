@@ -125,6 +125,7 @@ input[type=button], {
       <li><b>Team Lead - First Place and Popular Vote Winner</b> | <span style="color:#d3d3d3">Startup Weekend San Francisco, 2013 </span></li>
       <li><b>Intern Scholarship Award</b> | <span style="color:#d3d3d3">CUE Research Group, 2011</span></li>
     </ul> 
+   
     <div class="subheader">
     <p> EDUCATION & TRAINING </p>
     </div>
@@ -146,17 +147,38 @@ input[type=button], {
     </div>
     
     <button type="button" class="collapsible">AUG 2020</button>
+
 <div class="content">
-  <p> I recently left my role working on innovation in mobility & future-of-transportation tech at Goodyear's San Francisco Innovation Lab (where I was Product Manager / Sr. Designer of the <a href="http://www.andgonow.com"> <u> AndGo by Goodyear</u> </a> platform) in order to make time to figure out what I want to focus on next... and seeking to do everything I can to impact the climate catastrophe and crucial upcoming election. </p>
-    <p> To do this, I'm working with various local environmental advocacy groups, finishing up my fellowship with the Clean Energy Leadership Institute, and studying foresight, transportation planning and cities while exploring new roles. 
-      In addition, I serve as Chair of my city's Arts & Culture Commission and also enjoy biking, kiteboarding, sailing, traveling, reading, screenprinting and making ceramic art. </p>
+<p> I recently left my role working on innovation in mobility & future-of-transportation tech at Goodyear's San Francisco Innovation Lab (where I was Product Manager / Sr. Designer of the <a href="http://www.andgonow.com"> <u> AndGo by Goodyear</u> </a> platform) in order to make time to figure out what I want to focus on next... and seeking to do everything I can to impact the climate catastrophe and crucial upcoming election. 
+  </p>
+<p> To do this, I'm working with various local environmental advocacy groups, finishing up my fellowship with the Clean Energy Leadership Institute, and studying foresight, transportation planning and cities while exploring new roles. 
+      In addition, I serve as Chair of my city's Arts & Culture Commission and also enjoy biking, kiteboarding, sailing, traveling, reading, screenprinting and making ceramic art. 
+  </p>
 <p> I'm now interested in PM or Sr. Designer roles as I'm motivated by building products people use and love and I've found opportunities to make meaningful impact in both roles.
-    </p>
+</p>
 </div>
      
   </body>
-  <footer>
+
+<footer>
   <b> You can also find me elsewhere on the internet: <a href="https://twitter.com/allis0nc00per"> <u>Twitter</u> </a> | <a href="http://www.linkedin.com/in/allisonmariecooper"> <u>Linkedin</> </a> </b>
 </footer>
+  
+  <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
   
 </html>  

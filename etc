@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Header stuff -->
+<head>
+  <title> Allison Marie Cooper | Home </title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Keywords" content="Allison Marie Cooper, Allison Cooper, Designer, Strategist, Entrepreneur, Public Policy, Transportation Policy, Policy Advocate, Sustainable Transit, Researcher, Policy Analyst, Founder, Product Designer, Product Manager, Design Strategist, Design, Sailor, Innovation Strategy, Strategist, Innovator, Berkeley, El Cerrito, California, Bay Area, San Francisco, Senior Product Designer, Transportation Advocate, Transit Advocate, Arts and Culture Commission, El Cerrito Arts and Culture, Environmental Activist, Policy Nerd, Product Manager/Senior Designer, Climate Advocate, Transit Enthusiast, Cyclist, Anthropology, Anthropologist, Clean Energy, Clean Energy Leader, McGill University, SSMU, Solar, Policy Advocate, Community Organizer;">
+  <meta name="Description" content="Allison Marie Cooper | Clean Energy & Sustainable Mobility Advocate">
+  <style> 
+input[type=button], {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+  
+  </head>
+<!-- Nav -->
+  <div class="nav">
+      <div class="subheader">
+        <p> 
+          <a href="index.html">HOME</a> | <a href="etc.html">BIO & RESUME</a> | ETC.
+        </p>
+      </div class="subheader">
+  </div class="nav">  
+  
+<!-- Main Content -->
+  
+  <div class="header">
+    <h1>
+      A bit more about me
+    </h1>
+ 
+  </div class="header">
+
+<br>
+
+  <body>    

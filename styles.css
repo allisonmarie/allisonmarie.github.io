@@ -32,12 +32,34 @@ body {
 img {
   float: left;
   padding-right: 10px;
+  width:100%;
+  height:auto;
 }
+
+/* Styles for text and image formatting in columns */
 
 .imageblock { 
   vertical-align: middle;
 }
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
 
+.box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width:25rem;
+    min-width:18rem;
+    margin: 10px;
+    text-align: center;
+  
 /* Styles for a link before hover or visiting */
 a:link {
   color: #ffffff;

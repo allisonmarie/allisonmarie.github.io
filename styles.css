@@ -130,12 +130,11 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 .content {
-  padding: 0 18px;
-  display: none;
+  padding: 18px 18px;
   overflow: hidden;
   color: #ffffff;
   background-color: #383838;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
 }
 

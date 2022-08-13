@@ -37,13 +37,13 @@ img {
 }
 
 #fixed-width-inline-image  {  
-  width: 150px; 
+  width: 250px; 
 }  
 
 /* Styles for text and image formatting in columns */
 
 .imageblock { 
-  vertical-align: middle;
+  vertical-align: top;
 }
 .container{
     display:flex;

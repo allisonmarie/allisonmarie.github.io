@@ -65,25 +65,25 @@ img {
     text-align: center;
   
 /* Styles for a link before hover or visiting */
-a:link {
-  color: #ffffff;
+.link {
+  color: #d3d3d3;
   text-decoration: none;
 }
 
 /* Styles for a link on hover */
-a:hover {
-  color: rgb(255, 82, 82);
+.link:hover {
+  color: #d5d5d5;
   text-decoration: underline;
 }
 
 /* Styles for a link on hover */
-a:visited {
-  color: #ffffff;
+.link:visited {
+  color: #d1d1d1;
   text-decoration: none;
 }
 
 footer {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'nunito', sans-serif;
   font-size: 16px;
 }
 

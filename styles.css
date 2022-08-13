@@ -64,22 +64,17 @@ img {
     margin: 10px;
     text-align: center;
   
-/* Styles for a link before hover or visiting */
-.link {
-  color: #d3d3d3;
+a:link, a:visited {
+  background-color: #ffffff;
+  color: 0D5CA5;
+  padding: 15px 25px;
+  text-align: center;
   text-decoration: none;
+  display: inline-block;
 }
 
-/* Styles for a link on hover */
-.link:hover {
-  color: #d5d5d5;
-  text-decoration: underline;
-}
-
-/* Styles for a link on hover */
-.link:visited {
-  color: #d1d1d1;
-  text-decoration: none;
+a:hover, a:active {
+  background-color: #d3d3d3;
 }
 
 footer {

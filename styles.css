@@ -1,8 +1,8 @@
 body {
-  background-color: #000000;
+  background-color: #0D5CA5;
   font-size: 20px;
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin-top: 100px;
   margin-bottom: 100px;
   margin-right: 10%;
@@ -11,12 +11,12 @@ body {
 
 .header {
   color: white;
-  font-family: 'Merriweather', serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 30px;
 }
 .nav {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   letter-spacing: 2px;
   font-size: 12px;
   text-align: right;
@@ -24,7 +24,7 @@ body {
 
 .subheader {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   letter-spacing: 2px;
   font-size: 12px;
 }

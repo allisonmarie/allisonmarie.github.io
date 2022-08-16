@@ -82,32 +82,6 @@ footer {
   font-size: 10px;
 }
 
-.form {
-  background-color: #ffffff;
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  border-radius: 8px;
-}
-
-input[type=button], input[type=submit], input[type=reset] {
-  background-color: #606060;
-  border: none;
-  color: #ffffff;
-  padding: 16px 32px;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
 .collapsible {
   background-color: #383838;
   color: #ffffff;

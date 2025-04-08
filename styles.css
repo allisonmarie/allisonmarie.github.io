@@ -66,16 +66,12 @@ img {
 }
   
 a:link, a:visited {
-  background-color: #ffffff;
-  color: 0D5CA5;
-  padding: 15px 25px;
-  text-align: center;
+  color: #d3d3d3;
   text-decoration: none;
   display: inline-block;
 }
 
 a:hover, a:active {
-  background-color: #d3d3d3;
 }
 
 footer {

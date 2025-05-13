@@ -9,6 +9,10 @@ body {
   margin-left: 10%;
 }
 
+div.main {
+  width: 500px;
+  margin: auto;
+}
 .center {
   display: block;
   margin-left: auto;

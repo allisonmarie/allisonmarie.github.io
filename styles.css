@@ -9,6 +9,12 @@ body {
   margin-left: 10%;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 38.2%;
+}
 .header {
   color: white;
   font-family: 'Nunito', sans-serif;

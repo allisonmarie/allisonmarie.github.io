@@ -10,7 +10,7 @@ body {
 }
 
 div.main {
-  width: 500px;
+  max-width: 500px;
   margin: auto;
 }
 
@@ -41,8 +41,7 @@ div.main {
 }
 
 img {
-  float: left;
-  padding-right: 40px;
+  display: block;
   width:38.2%;
   height:auto;
 }

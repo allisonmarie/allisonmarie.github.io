@@ -46,8 +46,13 @@ img {
   height:auto;
 }
 
-  
-a:link, a:visited {
+  a:link {
+  color: #40cf7a;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:visited {
   color: #339c5e;
   text-decoration: none;
   display: inline-block;

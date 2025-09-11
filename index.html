@@ -1,68 +1,182 @@
 <!DOCTYPE html>
-<html>
-<!-- Header stuff -->
+<html lang="en">
 <head>
-  <title> Allison Marie Cooper | Home </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allison Marie Cooper | Home</title>
   <link rel="shortcut icon" type="image/jpg" href="/images/favicon.png"/>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <meta name="Keywords" content="Allison Marie Cooper, Allison Cooper, Designer, Strategist, Entrepreneur, UX, UX Designer, User Experience Design, Lead Designer, Experienced Designer, San Francisco, San Francisco Designer, San Francisco Sailor, Design Expert, Public Policy, Transportation Policy, Policy Advocate, Sustainable Transit, Researcher, Policy Analyst, Founder, Product Designer, Product Manager, Design Strategist, Design, Sailor, Innovation Strategy, Strategist, Innovator, Berkeley, El Cerrito, California, Bay Area, San Francisco, Senior Product Designer, Transportation Advocate, Transit Advocate, Arts and Culture Commission, El Cerrito Arts and Culture, Environmental Activist, Policy Nerd, Product Manager/Senior Designer, Climate Advocate, Transit Enthusiast, Cyclist, Anthropology, Anthropologist, Clean Energy, Clean Energy Leader, McGill University, SSMU, Solar, Policy Advocate, Community Organizer;">
-  <meta name="Description" content="Allison Marie Cooper | Entrepreneur, Designer, Artist, Coach, Professor, Strategist | Clean Energy, Oceans, Sustainable Mobility">
-  </head>
-  
-<!-- Main Content -->
-  <div class="main">
-  <div class="header">
-   <img src="/images/allisonmarie+handdrawn+logo+no+bg+black.jpg" alt="(allison marie)" class="center">
-   <p style="text-align: center;">ALLISON MARIE COOPER</p>
-  </div class="header">
-  <body>    
-      <div class="subheader">
-         
-        <p style="text-align: center;">DESIGN • BUSINESS STRATEGY • COACHING 
-          <br> CLIMATE ADVOCACY • SAILING</p>
-      </div class="subheader">
-<p style="text-align: center;">
-    <iframe 
-  src="https://www.superme.ai/embed/acooper?style=minimalistic" 
-  width="500" 
-  height="150" 
-  style="border: none; border-radius: 16px;"
-  title="Allison's SuperMe Profile">
-</iframe>
-</p>
-     <p>Here's what I'm up to lately... 
-        </p>
-      <ul>
-        <li><b>Product Design 🎨</b> 
-          <br>Reach out (<a href="https://linkedin.com/in/allisonmariecooper/">Linkedin</a>) for my <a href="https://www.allisonmariecooper.com/">portfolio</a> password to talk more.</li>
-        <br>
-        <li><b>Creative exploration 🎨</b> 
-          <br>Lately: <a href="https://westernwindowstudio.com/">ceramics</a>, and <a href="http://allison.pictures/">printmaking and illustration</a>), music (piano + learning other instruments), and dance (mostly flamenco!).</li>
-        <br>
-        <li><b>Climate Innovation Consulting 🌱</b> 
-          <br>I support design and innovation strategy for climate solutions as <a href="https://www.seetheforest.org/">See the Forest Design</a>.</li>
-        <br>
-        <li><b>Climate Sailors 🌱</b> 
-          <br>Combining my passion for climate work with my love of sailing, I'm building a <a href="https://climatesailors.com/">group</a> for those who share these passions to get together.</li>
-        <br>
-        <li><b>Teaching & Coaching 🤝</b> 
-          <br>I've always loved mentorship and facilitating workshops, and am thrilled to be teaching two courses in the California College of the Arts Design MBA program this year.</li>
-        <br>
-        <li><b>Writing & publishing books 🤝</b> 
-          <br>I've been exploring children's books in particular, please be in touch if you want to collaborate!</li>
-</ul>
-         <div class="subheader">
-              <p style="text-align: center;">🎨 CRAFT | 🌱 IMPACT | 🤝 COLLABORATION
-    </p>
-        </div>         
-  
-           
-       
-</body>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefefe;
+      color: #222;
+    }
+    .header {
+      text-align: center;
+      padding: 60px 20px 20px 20px;
+    }
+    .header img {
+      max-width: 180px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .header h1 {
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 2rem;
+    }
+    .subheader {
+      text-align: center;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto 60px auto;
+      gap: 20px;
+      padding: 0 20px;
+    }
+    .project-card {
+      position: relative;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 30px 20px;
+      width: calc(33.33% - 20px);
+      box-sizing: border-box;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .project-card::after {
+      content: "";
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      width: 100px;
+      height: 50px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><path fill="none" stroke="%23006fa0" stroke-opacity="0.35" stroke-width="2" d="M0 15 Q25 0 50 15 T100 15"/><path fill="none" stroke="%23006fa0" stroke-opacity="0.35" stroke-width="2" d="M0 30 Q25 15 50 30 T100 30"/></svg>') no-repeat;
+      background-size: contain;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+    .project-card:hover::after {
+      opacity: 1;
+    }
+    .project-card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .project-card p {
+      margin: 0;
+      line-height: 1.5;
+      font-size: 0.95rem;
+      color: #333;
+    }
+    a {
+      color: #006fa0;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .linkedin-cta {
+      display: block;
+      width: max-content;
+      margin: 40px auto 0 auto;
+      padding: 12px 30px;
+      background-color: #0073b1;
+      color: #fff;
+      border-radius: 8px;
+      font-weight: 600;
+      text-align: center;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .linkedin-cta:hover {
+      background-color: #005582;
+    }
+    .footer {
+      background-color: #fefefe;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .superme-widget iframe {
+      max-width: 100%;
+      height: 150px;
+      border: none;
+      border-radius: 16px;
+    }
+    @media (max-width: 992px) {
+      .project-card { width: calc(50% - 20px); }
+    }
+    @media (max-width: 600px) {
+      .project-card { width: 100%; }
+    }
+  </style>
+</head>
+<body>
 
-<br>
-  </div class="main">
-</html>  
+  <div class="header">
+    <img src="/images/allisonmarie+handdrawn+logo+no+bg+black.jpg" alt="Allison Marie">
+    <h1>Allison Marie Cooper</h1>
+    <div class="subheader">
+      designer • artist • climate advocate • coach • entrepreneur
+    </div>
+  </div>
+
+  <div class="projects-container">
+    <div class="project-card">
+      <h2>Product Design 🎨</h2>
+      <p>Reach out to <a href="https://www.allisonmariecooper.com/">see my portfolio</a> for more. </p>
+    </div>
+
+    <div class="project-card">
+      <h2>Creative Exploration 🎹</h2>
+      <p>Lately: <a href="https://westernwindowstudio.com/">ceramics</a>, and <a href="http://allison.pictures/">printmaking and illustration</a>, music (piano + learning other instruments), and dance (mostly flamenco!).</p>
+    </div>
+
+    <div class="project-card">
+      <h2>Climate Innovation Consulting 🌱</h2>
+      <p>I support design and innovation strategy for climate solutions as <a href="https://www.seetheforest.org/">See the Forest Design</a>.</p>
+    </div>
+
+    <div class="project-card">
+      <h2>Climate Sailors ⛵</h2>
+      <p>Combining my passion for climate work with my love of sailing, I'm building a <a href="https://climatesailors.com/">group</a> for those who share these passions to <b>join the group</b>.</p>
+    </div>
+
+    <div class="project-card">
+      <h2>Teaching & Coaching 👩‍🏫</h2>
+      <p>I've always loved mentorship and facilitating workshops, and am thrilled to be teaching two courses in the California College of the Arts Design MBA program this year.</p>
+    </div>
+
+    <div class="project-card">
+      <h2>Writing & Publishing ✍️</h2>
+      <p>I've been exploring children's books in particular. Please be in touch if you want to collaborate!</p>
+    </div>
+  </div>
+
+  <a class="linkedin-cta" href="https://linkedin.com/in/allisonmariecooper/" target="_blank">Get in touch on LinkedIn</a>
+
+  <div class="footer">
+    <div class="superme-widget">
+      <iframe src="https://www.superme.ai/embed/acooper?style=minimalistic" title="Allison's SuperMe Profile"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,182 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Allison Marie Cooper | Home</title>
-  <link rel="shortcut icon" type="image/jpg" href="/images/favicon.png"/>
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Nunito', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fefefe;
-      color: #222;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allison Marie Cooper | Product Designer, UX Leader & Creative Coach | San Francisco Bay Area</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Allison Marie Cooper is a product designer, UX design leader, and creative coach based in the San Francisco Bay Area. Specializing in climate innovation, design strategy, mentorship, and teaching at California College of the Arts.">
+    <meta name="keywords" content="product designer, UX designer, UX leader, creative coach, design mentor, San Francisco Bay Area, climate innovation, design strategy, CCA Design MBA, product design portfolio, ceramics artist, flamenco dancer, climate tech consultant">
+    <meta name="author" content="Allison Marie Cooper">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Allison Marie Cooper | Product Designer & Creative Coach">
+    <meta property="og:description" content="Product designer, UX leader, and creative coach in the San Francisco Bay Area. Design strategy, climate innovation, and mentorship.">
+    <meta property="og:url" content="https://allisoncooper.info">
+    <meta property="og:image" content="https://allisoncooper.info/images/allisonmarie+handdrawn+logo+no+bg+black.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Allison Marie Cooper | Product Designer & Creative Coach">
+    <meta name="twitter:description" content="Product designer, UX leader, and creative coach in the San Francisco Bay Area.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://allisoncooper.info">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            overflow-x: hidden;
+            line-height: 1.5;
+        }
+
+        .grain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.03;
+            z-index: 100;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' /%3E%3C/svg%3E");
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 30px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 25px;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .logo-container img {
+            max-width: 200px;
+            height: auto;
+            filter: invert(1) brightness(0.95);
+            transition: all 0.3s ease;
+        }
+
+        .logo-container img:hover {
+            filter: invert(1) brightness(1);
+            transform: scale(1.02);
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.8em;
+            font-weight: 300;
+            margin-bottom: 8px;
+            color: #ffffff;
+            letter-spacing: 2px;
+            opacity: 0;
+            animation: fadeIn 1s ease 0.2s forwards;
+            font-family: 'Georgia', 'Garamond', 'Times New Roman', serif;
+        }
+
+        .tagline {
+            text-align: center;
+            font-size: 0.95em;
+            margin-bottom: 40px;
+            color: #888;
+            font-weight: 300;
+            letter-spacing: 1px;
+            opacity: 0;
+            animation: fadeIn 1s ease 0.4s forwards;
+        }
+
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #fff, transparent);
+            margin: 0 auto 35px;
+            opacity: 0.3;
+        }
+
+        .sections-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px 30px;
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeIn 1s ease 0.6s forwards;
+        }
+
+        .section-card {
+            background: transparent;
+            padding: 0;
+            border: none;
+            border-left: 1px solid #222;
+            padding-left: 18px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .section-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1px;
+            height: 0;
+            background: #fff;
+            transition: height 0.3s ease;
+        }
+
+        .section-card:hover::before {
+            height: 100%;
+        }
+
+        .section-card:hover {
+            border-left-color: #444;
+            padding-left: 22px;
+        }
+
+        .section-card h2 {
+            font-size: 1.15em;
+            margin-bottom: 6px;
+            color: #fff;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            font-family: 'Georgia', 'Garamond', 'Times New Roman', serif;
+        }
+
+        .section-card p {
+            font-size: 0.9em;
+            line-height: 1.6;
+            color: #999;
+            font-weight: 300;
+        }
+
+        .section-card a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid #444;
+            transition: all 0.2s ease;
+            font-weight: 300;
+        }
+
+        .section-card a:hover {
+            border-bottom-color: #fff;
+            opacity: 0.8;
+        }
+
+        .cta-container {
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s ease 0.8s forwards;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 40px;
+            font-size: 0.95em;
+            font-weight: 300;
+            color: #000;
+            background: #fff;
+            border: 1px solid #fff;
+            text-decoration: none;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+
+        .cta-button:hover::before {
+            left: 0;
+        }
+
+        .cta-button:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 900px) {
+            .sections-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .tagline {
+                font-size: 0.85em;
+            }
+
+            .sections-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .section-card {
+                border-left: none;
+                border-top: 1px solid #222;
+                padding-left: 0;
+                padding-top: 15px;
+            }
+
+            .section-card::before {
+                width: 0;
+                height: 1px;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .section-card:hover::before {
+                width: 100%;
+                height: 1px;
+            }
+
+            .section-card:hover {
+                padding-left: 0;
+                padding-top: 15px;
+            }
+
+            .cta-button {
+                padding: 12px 35px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Allison Marie Cooper",
+      "jobTitle": "Product Designer, UX Leader & Creative Coach",
+      "description": "Product designer, UX leader, and creative coach specializing in climate innovation and design strategy",
+      "url": "https://allisoncooper.info",
+      "sameAs": [
+        "https://linkedin.com/in/allisonmariecooper/",
+        "https://www.allisonmariecooper.com/",
+        "https://westernwindowstudio.com/",
+        "http://allison.pictures/",
+        "https://www.seetheforest.org/",
+        "https://climatesailors.com/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Francisco Bay Area",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "knowsAbout": [
+        "Product Design",
+        "UX Design",
+        "Design Leadership",
+        "Creative Coaching",
+        "Climate Innovation",
+        "Design Strategy",
+        "Mentorship",
+        "Ceramics",
+        "Printmaking"
+      ]
     }
-    .header {
-      text-align: center;
-      padding: 60px 20px 20px 20px;
-    }
-    .header img {
-      max-width: 180px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-    .header h1 {
-      margin-top: 20px;
-      font-weight: 400;
-      font-size: 2rem;
-    }
-    .subheader {
-      text-align: center;
-      font-weight: 400;
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 40px;
-    }
-    .projects-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      max-width: 1200px;
-      margin: 0 auto 60px auto;
-      gap: 20px;
-      padding: 0 20px;
-    }
-    .project-card {
-      position: relative;
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 30px 20px;
-      width: calc(33.33% - 20px);
-      box-sizing: border-box;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .project-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-    .project-card::after {
-      content: "";
-      position: absolute;
-      bottom: 12px;
-      right: 12px;
-      width: 100px;
-      height: 50px;
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><path fill="none" stroke="%23006fa0" stroke-opacity="0.35" stroke-width="2" d="M0 15 Q25 0 50 15 T100 15"/><path fill="none" stroke="%23006fa0" stroke-opacity="0.35" stroke-width="2" d="M0 30 Q25 15 50 30 T100 30"/></svg>') no-repeat;
-      background-size: contain;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      pointer-events: none;
-    }
-    .project-card:hover::after {
-      opacity: 1;
-    }
-    .project-card h2 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-    .project-card p {
-      margin: 0;
-      line-height: 1.5;
-      font-size: 0.95rem;
-      color: #333;
-    }
-    a {
-      color: #006fa0;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .linkedin-cta {
-      display: block;
-      width: max-content;
-      margin: 40px auto 0 auto;
-      padding: 12px 30px;
-      background-color: #0073b1;
-      color: #fff;
-      border-radius: 8px;
-      font-weight: 600;
-      text-align: center;
-      font-size: 1rem;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    .linkedin-cta:hover {
-      background-color: #005582;
-    }
-    .footer {
-      background-color: #fefefe;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .superme-widget iframe {
-      max-width: 100%;
-      height: 150px;
-      border: none;
-      border-radius: 16px;
-    }
-    @media (max-width: 992px) {
-      .project-card { width: calc(50% - 20px); }
-    }
-    @media (max-width: 600px) {
-      .project-card { width: 100%; }
-    }
-  </style>
+    </script>
 </head>
 <body>
+    <div class="grain"></div>
+    
+    <main class="container">
+        <header class="logo-container">
+            <img src="https://allisoncooper.info/images/allisonmarie+handdrawn+logo+no+bg+black.jpg" alt="Allison Marie Cooper - Product Designer and Creative Coach">
+        </header>
 
-  <div class="header">
-    <img src="/images/allisonmarie+handdrawn+logo+no+bg+black.jpg" alt="Allison Marie">
-    <h1>Allison Marie Cooper</h1>
-    <div class="subheader">
-      designer • artist • climate advocate • coach • entrepreneur
-    </div>
-  </div>
+        <h1>Allison Marie Cooper</h1>
+        <p class="tagline">designer • artist • climate advocate • coach • entrepreneur</p>
+        
+        <div class="divider"></div>
 
-  <div class="projects-container">
-    <div class="project-card">
-      <h2>Product / UX Design 🖥️</h2>
-      <p><a href="https://www.allisonmariecooper.com/">See my portfolio</a> for more. </p>
-    </div>
+        <section class="sections-grid">
+            <article class="section-card">
+                <h2>Product / UX Design</h2>
+                <p>Creating thoughtful digital experiences. <a href="https://www.allisonmariecooper.com/" target="_blank" rel="noopener">Portfolio</a></p>
+            </article>
 
-    <div class="project-card">
-      <h2>Creative Exploration 🎨</h2>
-      <p><a href="https://westernwindowstudio.com/">Ceramics</a>, <a href="http://allison.pictures/">printmaking and illustration</a>, music (piano + learning other instruments), and dance (mostly flamenco!).</p>
-    </div>
+            <article class="section-card">
+                <h2>Creative Exploration</h2>
+                <p><a href="https://westernwindowstudio.com/" target="_blank" rel="noopener">Ceramics</a>, <a href="http://allison.pictures/" target="_blank" rel="noopener">printmaking</a>, music, and flamenco dance.</p>
+            </article>
 
-    <div class="project-card">
-      <h2>Climate Innovation Consulting 🌱</h2>
-      <p>I support design and innovation strategy for climate solutions as <a href="https://www.seetheforest.org/">See the Forest Design</a>.</p>
-    </div>
+            <article class="section-card">
+                <h2>Climate Innovation</h2>
+                <p>Design and innovation strategy at <a href="https://www.seetheforest.org/" target="_blank" rel="noopener">See the Forest Design</a>.</p>
+            </article>
 
-    <div class="project-card">
-      <h2>Climate Sailors ⛵</h2>
-      <p>Combining my passion for climate work with my love of sailing, I'm building a <a href="https://climatesailors.com/">group</a> for those who share these passions.</p>
-    </div>
+            <article class="section-card">
+                <h2>Climate Sailors</h2>
+                <p>Building a <a href="https://climatesailors.com/" target="_blank" rel="noopener">community</a> for climate-conscious sailors.</p>
+            </article>
 
-    <div class="project-card">
-      <h2>Teaching & Coaching 👩‍🏫</h2>
-      <p>I've always loved mentorship and facilitating workshops, and am thrilled to be teaching two courses in the California College of the Arts Design MBA program this year.</p>
-    </div>
+            <article class="section-card">
+                <h2>Teaching & Coaching</h2>
+                <p>Mentorship and workshops at California College of the Arts Design MBA.</p>
+            </article>
 
-    <div class="project-card">
-      <h2>Writing & Publishing ✍️</h2>
-      <p>I've been exploring children's books in particular — please be in touch if you want to collaborate!</p>
-    </div>
-  </div>
+            <article class="section-card">
+                <h2>Writing & Publishing</h2>
+                <p>Exploring children's books. Open to collaboration.</p>
+            </article>
+        </section>
 
-  <a class="linkedin-cta" href="https://linkedin.com/in/allisonmariecooper/" target="_blank">Get in touch on LinkedIn</a>
-
-  <div class="footer">
-    <div class="superme-widget">
-      <iframe src="https://www.superme.ai/embed/acooper?style=minimalistic" title="Allison's SuperMe Profile"></iframe>
-    </div>
-  </div>
-
+        <div class="cta-container">
+            <a href="https://linkedin.com/in/allisonmariecooper/" target="_blank" rel="noopener" class="cta-button">Connect on LinkedIn</a>
+        </div>
+    </main>
 </body>
 </html>

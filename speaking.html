@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allison Marie Cooper | Product Designer, UX Leader, Artist & Creative Coach | San Francisco Bay Area</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Allison Marie Cooper is a product designer, artist, and leadership coach based in the San Francisco Bay Area. Specializing in climate innovation, design strategy, mentorship, and teaching at California College of the Arts.">
+    <meta name="keywords" content="product designer, UX designer, UX leader, creative coach, transformation, promotion, change my life, get unblocked, creative inspiration, design mentor, San Francisco Bay Area, climate innovation, design strategy, CCA Design MBA, product design portfolio, ceramics artist, flamenco dancer, climate tech consultant, leadership coach, executive coach, creative coach, professional coach, public speaker, workshop facilitator, oceans advocate, scuba diver, yoga teacher, breathwork teacher">
+    <meta name="author" content="Allison Marie Cooper">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Allison Marie Cooper | Creative + Coach">
+    <meta property="og:description" content="Designer / Product+UX leader/ artist / sailor / leadership coach in the San Francisco Bay Area. Design strategy, climate innovation, and mentorship.">
+    <meta property="og:url" content="https://allisoncooper.info">
+    <meta property="og:image" content="https://allisoncooper.info/images/allisonmarie+handdrawn+logo+no+bg+black.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Allison Marie Cooper | Creative + Coach">
+    <meta name="twitter:description" content="Designer, creative coach and oceans advocate in the San Francisco Bay Area.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://allisoncooper.info">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            overflow-x: hidden;
+            line-height: 1.5;
+        }
+
+        .grain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.03;
+            z-index: 100;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' /%3E%3C/svg%3E");
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 30px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 25px;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .logo-container img {
+            max-width: 200px;
+            height: auto;
+            filter: invert(1) brightness(0.95);
+            transition: all 0.3s ease;
+        }
+
+        .logo-container img:hover {
+            filter: invert(1) brightness(1);
+            transform: scale(1.02);
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.8em;
+            font-weight: 300;
+            margin-bottom: 8px;
+            color: #ffffff;
+            letter-spacing: 2px;
+            opacity: 0;
+            animation: fadeIn 1s ease 0.2s forwards;
+            font-family: 'Georgia', 'Garamond', 'Times New Roman', serif;
+        }
+
+        .tagline {
+            text-align: center;
+            font-size: 0.95em;
+            margin-bottom: 40px;
+            color: #888;
+            font-weight: 300;
+            letter-spacing: 1px;
+            opacity: 0;
+            animation: fadeIn 1s ease 0.4s forwards;
+        }
+
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #fff, transparent);
+            margin: 0 auto 35px;
+            opacity: 0.3;
+        }
+
+        .sections-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px 30px;
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeIn 1s ease 0.6s forwards;
+        }
+
+        .section-card {
+            background: transparent;
+            padding: 0;
+            border: none;
+            border-left: 1px solid #222;
+            padding-left: 18px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .section-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1px;
+            height: 0;
+            background: #fff;
+            transition: height 0.3s ease;
+        }
+
+        .section-card:hover::before {
+            height: 100%;
+        }
+
+        .section-card:hover {
+            border-left-color: #444;
+            padding-left: 22px;
+        }
+
+        .section-card h2 {
+            font-size: 1.15em;
+            margin-bottom: 6px;
+            color: #fff;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            font-family: 'Georgia', 'Garamond', 'Times New Roman', serif;
+        }
+
+        .section-card p {
+            font-size: 0.9em;
+            line-height: 1.6;
+            color: #999;
+            font-weight: 300;
+        }
+
+        .section-card a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid #444;
+            transition: all 0.2s ease;
+            font-weight: 300;
+        }
+
+        .section-card a:hover {
+            border-bottom-color: #fff;
+            opacity: 0.8;
+        }
+
+        .cta-container {
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s ease 0.8s forwards;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 40px;
+            font-size: 0.95em;
+            font-weight: 300;
+            color: #000;
+            background: #fff;
+            border: 1px solid #fff;
+            text-decoration: none;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+
+        .cta-button:hover::before {
+            left: 0;
+        }
+
+        .cta-button:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 900px) {
+            .sections-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .tagline {
+                font-size: 0.85em;
+            }
+
+            .sections-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .section-card {
+                border-left: none;
+                border-top: 1px solid #222;
+                padding-left: 0;
+                padding-top: 15px;
+            }
+
+            .section-card::before {
+                width: 0;
+                height: 1px;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .section-card:hover::before {
+                width: 100%;
+                height: 1px;
+            }
+
+            .section-card:hover {
+                padding-left: 0;
+                padding-top: 15px;
+            }
+
+            .cta-button {
+                padding: 12px 35px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Allison Marie Cooper",
+      "jobTitle": "Product Designer, Design Lead, UX Leader & Creative Coach",
+      "description": "Designer/researcher, leadership coach and oceans advocate specializing in climate innovation and design strategy",
+      "url": "https://allisoncooper.info",
+      "sameAs": [
+        "https://linkedin.com/in/allisonmariecooper/",
+        "https://www.allisonmariecooper.com/",
+        "https://westernwindowstudio.com/",
+        "http://allison.pictures/",
+        "https://www.seetheforest.org/",
+        "https://climatesailors.com/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Francisco Bay Area",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "knowsAbout": [
+        "Product Design",
+        "UX Design",
+        "Design Leadership",
+        "Creative Coaching",
+        "Climate Innovation",
+        "Design Strategy",
+        "Mentorship",
+        "Ceramics",
+        "Printmaking"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <div class="grain"></div>
+    
+    <main class="container">
+        <header class="logo-container">
+            <img src="https://allisoncooper.info/images/allisonmarie+handdrawn+logo+no+bg+black.jpg" alt="Allison Marie Cooper - Product Designer and Creative Coach">
+        </header>
+
+        <h1>Speaking, Workshops & Writing</h1>
+        <p class="tagline">Allison's interests & experiences</p>
+        
+        <div class="divider"></div>
+
+        <section class="sections-grid">
+            <article class="section-card">
+                <h2>Speaking Topics</h2>
+                <p>With experience in design and leadership coaching, I'm excited to present on a range of topics related to innovation, design strategy and personal/soft skills development.</p>
+            </article>
+            <article class="section-card">
+                <h2>Past Speaking Experience</h2>
+                <p>Member "Ignite" Talk | The Long Now - San Francisco, 2020
+                <br><br>Lightning Talk | Women Talk Design - San Francisco, 2019
+                <br><br>Conference Presenter | Traction Summit - San Jose, 2019
+                <br><br>Conference Presenter | QPIRG McGill-Concordia Study in Action Undergraduate Research Conference - Montreal, 2012.</p>
+            </article>
+          
+            <article class="section-card">
+                <h2>Workshops</h2>
+                <p>Workshops I love to share include: Feedback skills, coaching skills, active listening, non-violent communication, intro to improv, and #IamRemarkable self-promotion/confidence workshop (certified facilitator through Google's #IamRemarkable initiative in 2019).</p>
+            </article>
+
+        </section>
+
+        <div class="cta-container">
+            <a href="https://linkedin.com/in/allisonmariecooper/" target="_blank" rel="noopener" class="cta-button">Connect on LinkedIn</a>
+        </div>
+    </main>
+</body>
+</html>
